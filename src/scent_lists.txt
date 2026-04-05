@@ -1,0 +1,53 @@
+//Fruity
+    "strawberry",
+    "banana",
+    "grapefruit",
+    "grape",
+    "peach",
+    "pear",
+    "pineapple",
+    "raspberry",
+    "watermelon",
+    "cherry",
+    "apple",
+// Citrus    
+    "orange",
+    "lemon",
+    "lime",
+    "citrus",
+// Woody
+    "pine",
+    "cedar",
+    "oak",
+    "sandalwood",
+    "eucalyptus",
+    "cypress",
+    "maple",
+// Baking
+    "sugar",
+    "cinnamon",
+    "vanilla",
+    "mint",
+// Floral
+    "roses",
+    "lavender",
+    "jasmine",
+    "gardenia",
+// Herbal
+    "patchouli",
+    "sage",
+    "basil",
+    "thyme",
+    "rosemary",
+    "clove",
+    "bergamot",
+// Perfume
+    "cheap perfume",
+    "expensive perfume",
+    "cheap cologne",
+    "expensive cologne",
+    "myrrh",
+    "amber",
+// Abstract
+    "happiness",
+    "sadness"

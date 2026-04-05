@@ -1,12 +1,28 @@
 /*
 Brute Force Ozone Buster V.1.0
-by HelpfulDuckie (aka bluestar); vibe coded with Copilot
+by HelpfulDuckie (aka bluestar); vibe-coded with Copilot
 
-This is a simple brute-force approach to removing the word "ozone" from the AI's output. It first tries to remove the word entirely if it was paired with another scent (ex: "The room smelled of ozone and clean laundry" will become "The room smelled of clean laundry"). If the word appeared by itself, the script will replace it with a random acceptable scent from the ACCEPTABLE_REPLACEMENTS list (ex: "The room smelled of ozone" might become "The room smelled of strawberries").
+This is a simple brute-force approach to removing the word "ozone" 
+from the AI's output. It first tries to remove the word entirely if 
+it was paired with another scent (ex: "The room smelled of ozone 
+and clean laundry" will become "The room smelled of clean laundry"). 
+If the word appeared by itself, the script will replace it with a 
+random acceptable scent from the ACCEPTABLE_REPLACEMENTS list (ex: 
+"The room smelled of ozone" might become "The room smelled of 
+strawberries").
 
-The hope is that the AI will pick up on the alterative word if it tries to reference scent again in the same scene (and maybe will remember the alternative the next time you are in that place?) the same way it remembers other details about the scene.
+The hope is that the AI will pick up on the alterative word if it 
+tries to reference scent again in the same scene (and maybe will 
+remember the alternative the next time you are in that place?) the 
+same way it remembers other details about the scene.
 
-This script is written to be flexible enough to replace other (probably scent-related) words by adding additional strings (words in quotes) to the TARGET_WORDS list and to replace them with a variety of other alternatives by adding those alternatives to the ACCEPTABLE_REPLACEMENTS list. The more alternatives you add, the less likely it is that the same replacement will be repeated within close proximity to one another. 
+This script is written to be flexible enough to replace other 
+(probably scent-related) words by adding additional strings (words 
+in quotes) to the TARGET_WORDS list and to replace them with a 
+variety of other alternatives by adding those alternatives to 
+the ACCEPTABLE_REPLACEMENTS list. The more alternatives you add, 
+the less likely it is that the same replacement will be repeated 
+within close proximity to one another. 
 */
 
 function ozoneBuster(text)
@@ -15,52 +31,24 @@ function ozoneBuster(text)
     const TARGET_WORDS = ["ozone"];
     // List of words that ozone buster will try to replace the above words with
     const ACCEPTABLE_REPLACEMENTS = [
-        "strawberry",
-        "banana",
-        "grapefruit",
-        "grape",
-        "peach",
-        "pear",
-        "pineapple",
-        "raspberry",
-        "watermelon",
-        "cherry",
-        "apple",
-        "orange",
-        "lemon",
-        "lime",
-        "citrus",
-        "pine",
-        "cedar",
-        "oak",
-        "sandalwood",
-        "eucalyptus",
-        "cypress",
-        "maple",
-        "sugar",
-        "cinnamon",
-        "vanilla",
-        "mint",
-        "roses",
-        "lavender",
-        "jasmine",
-        "gardenia",
-        "patchouli",
-        "sage",
-        "basil",
-        "thyme",
-        "rosemary",
-        "clove",
-        "bergamot",
-        "cheap perfume",
-        "expensive perfume",
-        "cheap cologne",
-        "expensive cologne",
-        "happiness",
-        "sadness"
+        "lightning",
+        "sheet metal",
+        "copper",
+        "acetone",
+        "chemicals",
+        "chlorine",
+        "resin",
+        "concrete",
+        "asphalt",
+        "tar",
+        "smoke",
+        "burnt rubber",
+        "charcoal",
+        "gunpowder",
+        "sulfur"
     ];
 
-    const DEBUG = true; // Set to true to enable debug logging
+    const DEBUG = false; // Set to true to enable debug logging
 
     //Removes target entirely if it was paired with a second scent.
     function removeOzoneEntirely(text){
