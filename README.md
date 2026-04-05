@@ -30,9 +30,9 @@ This script is written to be flexible enough to replace other (probably scent-re
 ```javascript
 // Your "Output" tab should look like this
 const modifier = (text) => {
-  // Your other output modifier scripts go here (preferred)
+  // Your other output modifier scripts go here
   text = ozoneBuster(text);
-  // Your other output modifier scripts go here (alternative)
+  // Your other output modifier scripts go here
   return {text};
 };
 modifier(text);
