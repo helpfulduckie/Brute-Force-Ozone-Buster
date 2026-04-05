@@ -24,11 +24,9 @@ The default list of replacement words are all words I would call "Industrial". T
 3. Open the `DETAILS` tab at the top while editing your scenario
 4. Scroll down to `Scripting` and toggle ON → `Scripts Enabled`
 5. Select `EDIT SCRIPTS`
-6. Select the `Input` tab on the left
+6. Select the `Output` tab on the left
 7. Delete all code within said tab
-8. Select the `Output` tab on the left
-9. Delete all code within said tab
-10. Copy and paste the following code into your empty `Output` tab:
+8. Copy and paste the following code into your empty `Output` tab:
 ```javascript
 // Your "Output" tab should look like this
 const modifier = (text) => {
@@ -39,14 +37,14 @@ const modifier = (text) => {
 };
 modifier(text);
 ```
-11. Select the `Library` tab on the left
-12. Delete all code within said tab
-13. Open my full Library code (hyperlink below) in a new browser tab
+9. Select the `Library` tab on the left
+10. Delete all code within said tab
+11. Open my full Library code (hyperlink below) in a new browser tab
 - [Library code](./src/library.js)
-14. Copy my *full* code from the page above and paste into your empty `Library` tab
-15. Optionally, add or remove scents from the `TARGET_WORDS` and `ACCEPTABLE_REPLACEMENTS` lists (fewer words is better in TARGET_WORDS, more is better in ACCEPTABLE_REPLACEMENTS, you need to have at least word in both)
-16. Click the big yellow `SAVE` button in the top right corner
-17. And you're done!
+12. Copy my *full* code from the page above and paste into your empty `Library` tab
+13. Optionally, add or remove scents from the `TARGET_WORDS` and `ACCEPTABLE_REPLACEMENTS` lists (fewer words is better in TARGET_WORDS, more is better in ACCEPTABLE_REPLACEMENTS, you need to have at least word in both)
+14. Click the big yellow `SAVE` button in the top right corner
+15. And you're done!
 
 Keep in mind that any adventures played from your scenario will include Brute Force Ozone Buster (this also applies retroactively)
 
